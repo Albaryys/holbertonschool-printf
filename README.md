@@ -1,15 +1,19 @@
-Printf project :
-by Arnaud Tilly and Quentin Rouger C20-Holberton School Laval
+PRINTF PROJECT
+
+By Arnaud Tilly and Quentin Rouger C20-Holberton School Laval
 
 
 DESCRIPTION :
+
 The function _printf() sends a formatted string to the standard output. It works like the function of C library "printf()".
 
 PROTOTYPE :
+
 int _printf(const char *format, ...);
 
 
 COMPILATION COMMAND :
+
 compile: gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c -o nameofthefile execution: ./nameofthefile
 
 REQUIREMENTS :
