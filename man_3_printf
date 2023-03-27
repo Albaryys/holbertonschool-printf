@@ -1,4 +1,4 @@
-.TH _printf "1" "27 march 2023" "" "Manual page"
+.TH _printf "1" "27 march 2023" "_printf(1)" "Manual page"
 .SH NAME
 .B _printf
 .SH SYNOPSIS
@@ -24,6 +24,8 @@ The \fIint\fR argument is converted to signed decimal notation, and the resultin
 .TP
 .B %i :
 The \fIint\fR arguement is converted to signed integer notation, and the resulting is written.
+.SH RETURN VALUE
+
 .SH EXAMPLE
 
 .SH AUTHOR
