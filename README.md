@@ -7,12 +7,22 @@ The function _printf() sends a formatted string to the standard output. It works
 
 ## PROTOTYPE :
 
+```
 int _printf(const char *format, ...);
-
+```
 
 ## COMPILATION COMMAND :
 
-compile: gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c -o nameofthefile execution: ./nameofthefile
+compilation:
+
+```
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c -o nameofthefile
+```
+execution:
+
+```
+./nameofthefile
+```
 
 ## REQUIREMENTS :
 - All your files will be compiled on Ubuntu 20.04 LTS using gcc.
@@ -20,4 +30,11 @@ compile: gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c -o nameo
 - No more than 5 functions per file.
 - Only one project repository per group.
 
+## EXAMPLES :
+
+## TESTING :
+- Valgrind to test memory flaws
+- Betty to syntax issues
+
+## AUTHORS :
 By Arnaud Tilly and Quentin Rouger C20-Holberton School Laval
