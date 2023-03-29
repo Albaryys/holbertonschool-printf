@@ -1,11 +1,8 @@
 #include "main.h"
-#include <stdarg.h>
-#include <stdlib.h>
-#include <unistd.h>
 
 /**
  * _printf - Write a function that produces output according to a format.
- * @format is a character string. it's composed of zero or more directives.
+ * @format : is a character string. it's composed of zero or more directives.
  *
  * Return: the number of characters printed
  */
@@ -13,52 +10,37 @@ int _printf(const char *format, ...)
 {
 	va_list args;
 
+	print symb[] = {
+		{"c", print_c}, {"s", print_s}, {"%", print_p},
+		{NULL, NULL}};
+
 	va_start(args, format);
 
-	int count = 0;
-	const char *ptr;
+	int i, j, len = 0;
 
-	for (ptr = format; *ptr != '\0'; ptr++)
+	if (format == 0 || (format[0] == '%' && format[1] == '\0'))
+		return (-1);
+
+	for (i = 0; format[i] != '\0'; i++)
 	{
-		if (*ptr == '%')
+		if (format[i] == '%')
 		{
-			ptr++;
-
-			if (*ptr == 'c')
+			for (j = 0; symb[j].symbol != NULL; j++)
 			{
-				char c = (char)va_arg(args, int);
-
-				_putchar(c);
-				count++;
-			}
-			else if (*ptr == 's')
-			{
-				char *s = va_arg(args, char *);
-
-				while (*s != '\0')
+				if (format[i + 1] == *symb[j].symbol)
 				{
-					_putchar(*s);
-					count++;
-					s++;
+					len += symb[j].function(args);
+					i++;
+					break;
 				}
-			}
-			else if (*ptr == '%')
-			{
-				_putchar('%');
-				count++;
-			}
-			else
-			{
-				ptr--;
 			}
 		}
 		else
 		{
-			_putchar(*ptr);
-			count++;
+			len += _putchar(format[i]);
 		}
 	}
 
 	va_end(args);
-	return (count);
+	return (len);
 }
