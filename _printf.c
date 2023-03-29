@@ -8,6 +8,8 @@
  */
 int _printf(const char *format, ...)
 {
+	int i, j, len = 0;
+
 	va_list args;
 
 	print symb[] = {
@@ -15,8 +17,6 @@ int _printf(const char *format, ...)
 		{NULL, NULL}};
 
 	va_start(args, format);
-
-	int i, j, len = 0;
 
 	if (format == 0 || (format[0] == '%' && format[1] == '\0'))
 		return (-1);

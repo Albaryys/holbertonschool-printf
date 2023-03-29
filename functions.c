@@ -32,6 +32,7 @@ int print_c(va_list args)
  */
 int print_s(va_list args)
 {
+	int i;
 	int len = 0;
 	char *s = va_arg(args, char *);
 
@@ -40,7 +41,7 @@ int print_s(va_list args)
 		s = "(null)";
 	}
 
-	for (int i = 0; s[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		_putchar(s[i]);
 		len++;
