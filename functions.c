@@ -1,15 +1,6 @@
 #include "main.h"
 
 /**
- * _putchar - write the character c to stdout
- * @c: the character to print
- * Return: On success 1., on error, -1 is returned
- */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
-/**
  * print_c - print a character
  * @args: name of the arguments list
  * Return: len
@@ -60,4 +51,52 @@ int print_p(va_list args)
 	(void) args;
 	_putchar ('%');
 	return (1);
+}
+
+/**
+ * print_d - prints an integer
+ * @args: name of the va_list
+ * Return: the number of characters printed
+ */
+int print_d(va_list args)
+{
+	char	buffer[12];
+	char	*p = &buffer[11];
+	int	num = va_arg(args, int);
+	unsigned int	len = 0;
+
+	*p = '\0';
+	if (num == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
+	if (num < 0)
+	{
+		_putchar('-');
+		num = -num;
+	}
+	while (num > 0)
+	{
+		p--;
+		*p = (num % 10) + '0';
+		num /= 10;
+		len++;
+	}
+	while (*p != '\0')
+	{
+		_putchar(*p);
+		p++;
+	}
+	return (len);
+}
+
+/**
+ * print_i - prints an integer
+ * @args: name of the va_list
+ * Return: the number of characters printed
+ */
+int print_i(va_list args)
+{
+	return (print_d(args));
 }
