@@ -54,11 +54,11 @@ int print_p(va_list args)
 }
 
 /**
- * print_d - prints an integer
+ * print_int - prints an integer
  * @args: name of the va_list
  * Return: the number of characters printed
  */
-int print_d(va_list args)
+int print_int(va_list args)
 {
 	char	buffer[12];
 	char	*p = &buffer[11];
@@ -89,14 +89,4 @@ int print_d(va_list args)
 		p++;
 	}
 	return (len);
-}
-
-/**
- * print_i - prints an integer
- * @args: name of the va_list
- * Return: the number of characters printed
- */
-int print_i(va_list args)
-{
-	return (print_d(args));
 }

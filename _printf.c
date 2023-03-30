@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 
 	print symb[] = {
 		{"c", print_c}, {"s", print_s}, {"%", print_p},
-		{"d", print_d}, {"i", print_i},
+		{"d", print_int}, {"i", print_int},
 		{NULL, NULL}};
 
 	va_start(args, format);
