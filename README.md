@@ -52,7 +52,7 @@ execution:
 ```
 execution : man ./man_3_printf
 ```
-![image](Capture d’écran 2023-03-30 à 09.59.16.png)
+![image](https://github.com/Albaryys/holbertonschool-printf/blob/e9e2449f848c1ccd34bda69027619b0942b8bc17/Capture%20d%E2%80%99e%CC%81cran%202023-03-30%20a%CC%80%2011.28.49.png)
 
 #### AUTHORS :
 Arnaud Tilly and Quentin Rouger C20-Holberton School Laval
