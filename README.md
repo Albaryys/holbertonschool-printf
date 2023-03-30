@@ -43,7 +43,11 @@ execution:
 - Only one project repository per group.
 
 ### EXAMPLES :
-
+```
+#include "main.h"
+_printf("Negative:[%d]\n", -762534);
+output : Negative:[-762534]
+```
 
 ### TESTING :
 - ```Betty``` to syntax issues
