@@ -1,4 +1,4 @@
-.TH _printf "1" "27 march 2023" "_printf(1)" "Manual page"
+.TH _printf "1" "27 march 2023" "_printf(1)" "_printf manual page"
 .SH NAME
 .B _printf
 .SH SYNOPSIS
@@ -14,19 +14,28 @@
 The \fI%\fR arguments print a percent sign.
 .TP
 .B %c :
-The \fIint\fR argument is converted to a char, and the resulting character is written.
+The \fIint\fR argument is converted to a char, and the resulting character is
+written.
 .TP
 .B %s :
-The \fIconst char *\fR argument is a pointer to an array of characters, that converts the corresponding argument to a character string.
+The \fIconst char *\fR argument is a pointer to an array of characters, that
+converts the corresponding argument to a character string.
 .TP
 .B %d :
-The \fIint\fR argument is converted to signed decimal notation, and the resulting is written.
+The \fIint\fR argument is converted to signed decimal notation, and the
+resulting is written.
 .TP
 .B %i :
-The \fIint\fR arguement is converted to signed integer notation, and the resulting is written.
+The \fIint\fR arguement is converted to signed integer notation, and the
+resulting is written.
 .SH RETURN VALUE
-
+The return value is the number of characters printed (excluding the null byte
+used to end output to strings)
 .SH EXAMPLE
-
-.SH AUTHOR
+.B #include "main.h"
+.TP
+.B _printf("String:[%s]\n", "I am a string !");
+.TP
+.B output : String:[I am a string !]
+.SH AUTHORS
 .B TILLY Arnaud and ROUGER Quentin - C20 Holberton School Laval
