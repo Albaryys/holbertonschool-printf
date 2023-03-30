@@ -23,22 +23,13 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			if (format[i + 1] == '%')
+			for (j = 0; symb[j].symbol != NULL; j++)
 			{
-				len += _putchar('%');
-				i++;
-			}
-
-			else
-			{
-				for (j = 0; symb[j].symbol != NULL; j++)
+				if (format[i + 1] == *symb[j].symbol)
 				{
-					if (format[i + 1] == *symb[j].symbol)
-					{
-						len += symb[j].function(args);
-						i++;
-						break;
-					}	
+					len += symb[j].function(args);
+					i++;
+					break;
 				}
 			}
 		}
