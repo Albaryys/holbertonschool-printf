@@ -25,12 +25,12 @@ int _printf(const char *format, ...);
 
 ### COMPILATION COMMAND :
 
-compilation:
+compilation :
 
 ```
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c -o nameofthefile
 ```
-execution:
+execution :
 
 ```
 ./nameofthefile
