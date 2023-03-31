@@ -10,12 +10,12 @@ It works like the function of C library ```"printf()"```.
 
 | Files                                                                                         | Description         |
 | --------------------------------------------------------------------------------------------- | ------------------- |
-| [main.h](https://github.com/Albaryys/holbertonschool-printf/blob/5cbf4f965e394234c339164c85df8b6e0a8378fe/main.h "Header file")                   | Header file with structure and prototypes        |
-| [_printf.c](https://github.com/Albaryys/holbertonschool-printf/blob/5cbf4f965e394234c339164c85df8b6e0a8378fe/_printf.c "_printf function")          | main function of the _printf function     |
-| [functions.c](https://github.com/Albaryys/holbertonschool-printf/blob/6636559c257c45943afd877d0013814ddcdae259/functions.c "Data type functions") | functions specifiers |
+| [main.h](https://github.com/Albaryys/holbertonschool-printf/blob/0948993b9900fec922e76797bd2333c02eff8eed/main.h "Header file")                   | Header file with structure and prototypes        |
+| [_printf.c](https://github.com/Albaryys/holbertonschool-printf/blob/0948993b9900fec922e76797bd2333c02eff8eed/_printf.c "_printf function")          | main function of the _printf function     |
+| [functions.c](https://github.com/Albaryys/holbertonschool-printf/blob/0948993b9900fec922e76797bd2333c02eff8eed/functions.c "Data type functions") | functions specifiers |
 | [_putchar.c](https://github.com/Albaryys/holbertonschool-printf/blob/6636559c257c45943afd877d0013814ddcdae259/_putchar.c "_putchar function")           | _putchar function   |
-| [man_3_printf](https://github.com/Albaryys/holbertonschool-printf/blob/119a74d92ef94ee09bbe4268a0b9aaa2a3a32d79/man_3_printf "man_3_printf")           | manual of the _printf function   |
-| [README.md](https://github.com/Albaryys/holbertonschool-printf/blob/119a74d92ef94ee09bbe4268a0b9aaa2a3a32d79/README.md "README.md")           | README of the project _printf   |
+| [man_3_printf](https://github.com/Albaryys/holbertonschool-printf/blob/0948993b9900fec922e76797bd2333c02eff8eed/man_3_printf "man_3_printf")           | manual of the _printf function   |
+| [README.md](https://github.com/Albaryys/holbertonschool-printf/blob/0948993b9900fec922e76797bd2333c02eff8eed/README.md "README.md")           | README of the project _printf   |
 
 ### PROTOTYPE :
 
