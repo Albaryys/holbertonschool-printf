@@ -62,7 +62,7 @@ int print_int(va_list args)
 {
 	char	buffer[12];
 	char	*p = &buffer[11];
-	int	num = va_arg(args, int);
+	long	num = va_arg(args, int);
 	long int	len = 0;
 
 	*p = '\0';
